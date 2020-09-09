@@ -7,7 +7,11 @@ module.exports={
       "@babel/plugin-proposal-optional-chaining",
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-private-methods",
-      "@babel/plugin-syntax-bigint"
+      "@babel/plugin-syntax-bigint",
+      ["import",{
+        "libkraryName":"ant-design-vue",
+        "style":true
+      }]
     ]
   
 }

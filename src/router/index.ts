@@ -8,6 +8,15 @@ const routes: Array<any> = [
   //   component: Home
   // },
   {
+    path:"/login",
+    name:"Login",
+    component:()=>import("@/views/login/index.vue"),
+    meta:{
+      title:"登录",
+      hidden:true
+    }
+  },
+  {
     path: "/",
     name: "Home",
     component: Layout,
@@ -53,6 +62,58 @@ const routes: Array<any> = [
     meta:{
       title:"待办事项-vuex"  
       }
+  },
+  {
+    path:"/proxy",
+    name:"Proxy",
+    component:Layout,
+    children:[
+      {
+        path:"/Proxy",
+        component:()=>import("@/views/proxy/index.vue")
+      }
+    ],
+    meta:{
+      title:"proxy"
+    }
+  },
+  {
+    path:"/features",
+    name:"Features",
+    component:Layout,
+    children:[
+      {
+        path:"/features",
+        component:()=>import("@/views/features/index.vue")
+      }
+    ],
+    meta:{
+      title:"主功能"
+    }
+  },
+  {
+    path:"/movies",
+    name:"Movies",
+    component:Layout,
+    children:[
+      {
+        path:"/movies",
+        component:()=>import("@/views/movie/index.vue")
+      }
+    ],
+    meta:{
+      title:"电影"
+    }
+  },
+  
+  {
+    path:"/404",
+    name:"404",
+    component:()=>import("@/views/404.vue"),
+    meta:{
+      title:"404",
+      hidden:true
+    }
   }
   // {
   //   path: "/about",

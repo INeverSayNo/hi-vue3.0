@@ -1,0 +1,1 @@
+export const token=(state: { User: { token: any; }; })=>state.User.token

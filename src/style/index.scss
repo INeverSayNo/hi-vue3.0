@@ -1,3 +1,5 @@
+@import "./lulu-ui/index";
+@import "./Iconfont/index";
 @import "./button/index";
 @import "./input/index";
 @import "./reset.scss";
@@ -5,3 +7,31 @@ html,body,#app{
     height: 100%;
     overflow: hidden;
 }
+.ant-layout-has-sider{
+  height: 100%;
+}
+.ant-layout-header{
+  text-align: left;
+}
+.width20{
+    width: 10%;
+    margin-left: 30px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+  }
+   
+  :hover::-webkit-scrollbar-thumb {
+    background: #7098e8d1;
+  }
+   
+  :hover::-webkit-scrollbar-track {
+    background: hsla(0, 0%, 53%, 0.1);
+  }
